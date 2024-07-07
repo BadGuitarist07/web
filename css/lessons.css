@@ -1,0 +1,244 @@
+:root {
+    --bgbtn: #d88ab8;
+    --hover: #706f6f;
+    --header: #F5E3F5;
+    --colorTxt: #a59f9f;
+    --titles: #3eaf28;
+    --bgMain: rgb(241, 241, 241);
+
+    --sizeLogo: 2rem;
+    --sizeNavbar: 1.2rem;
+    --sizeTitles: 2.5rem;
+    --sizeTxt: 1.3rem;
+
+    --banner: url('../assets/img/lessons.png');
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+em {
+    color: var(--hover);
+}
+
+span {
+    color: var(--titles);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+}
+
+/** Header **/
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--bgbtn);
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.title {
+    font-size: var(--sizeLogo);
+    color: var(--header);
+}
+
+.navbar li {
+    margin: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+.navbar li a {
+    color: var(--header);
+    text-decoration: none;
+    font-size: var(--sizeNavbar);
+}
+
+/** Banner **/
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-image: var(--banner);
+    background-size: cover;
+    background-position:0%;
+}
+
+.banner p {
+    width: 100%;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 100px 1px inset var(--hover);
+    border-radius: 15px;
+    padding: 10px 55px;
+    font-size: 10vh;
+    color: var(--header);
+}
+
+
+.banner a {
+    background-color: var(--bgbtn);
+    text-decoration: none;
+    color: var(--header);
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.banner a:hover {
+    box-shadow: 1px 1px 6px 3px var(--hover);
+    transform: scale(1.05);
+}
+
+/** Section Intro **/
+
+main {
+    padding: 50px;
+    background-color: var(--bgMain)
+}
+
+.section-intro {
+    width: 100%;
+    margin: auto;
+}
+
+.section-h2 {
+    display: inline-block;
+    font-size: var(--sizeTitles);
+    color: var(--titles);
+    border-bottom: 2px dotted var(--titles);
+    margin-bottom: 10px;
+}
+
+.section-h3, .section-h4 {
+    color: var(--hover);
+    font-size: var(--sizeLogo);
+    margin-bottom: 30px;
+}
+
+
+.section-col-1 {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.subcol-1, .subcol-2 {
+    width: 50%;
+    text-align: center;
+}
+
+.subcol-1 > p, .subcol-2 > p {
+    border-bottom: 2px dashed var(--hover);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+
+}
+
+.section-p, .section-ul {
+    font-size: var(--sizeTxt);
+    color: var(--colorTxt);
+    margin-bottom: 30px;
+}
+
+
+.section-a {
+    display: inline-block;
+    background-color: var(--bgbtn);
+    font-size: var(--sizeTxt);
+    text-decoration: none;
+    color: var(--header);
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    
+}
+
+.section-a:hover {
+    box-shadow: 1px 1px 6px 3px var(--hover);
+}
+
+.section-btn {
+    border-top: 2px dotted var(--bgbtn);
+    margin-top: 50px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+
+@media (max-width:425px ) {
+
+    .banner {
+        background-image: url(../assets/img/mobile/lesson.png);
+    }
+
+    .banner p {
+        font-size: 4vh;
+    }
+
+    .section-col-1 {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    .subcol-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .subcol-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-btn  {
+        background-color: var(--bgbtn);
+        position: fixed;
+        border: none;
+        width: 100%;
+        margin: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+    }
+
+    .section-btn a {
+        background-color: var(--header);
+        color: var(--hover);
+    }
+} 
