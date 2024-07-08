@@ -9,7 +9,7 @@ const correctPhrases = [
     {id: 'input7', pattern: /^sore wa anata no tokei.* desu ka$/},
     {id: 'input8', pattern: /^are wa watashi no terebi.* desu$/},
     {id: 'input9', pattern: /^watashi wa nihongo no gakusei.* desu$/},
-    {id: 'input10', pattern: /^kore wa watashi no hon* desu$/},
+    {id: 'input10', pattern: /^kore wa watashi no hon.* desu$/},
 ];
 
 function validateAll () {
