@@ -4,6 +4,7 @@ if (localStorage.getItem('visitCount') === null ) {
 
 let currentCount = parseInt(localStorage.getItem('visitCount'));
 
+// aumentar el contador en +1
 currentCount++;
 
 localStorage.setItem('visitCount', currentCount);
