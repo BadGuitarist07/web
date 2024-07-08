@@ -231,7 +231,7 @@ main {
     background-color: var(--bgbtn);
     font-size: var(--sizeTxt);
     text-decoration: none;
-    color: var(--header);
+    color: var(--colorTxt);
     padding: 10px 30px;
     border-radius: 4px;
     transition: all 0.5s ease;
@@ -293,11 +293,15 @@ main {
 
     .section-btn a {
         background-color: var(--header);
-        color: var(--hover);
+        color: var(--colorTxt);
     }
 
     .br {
         margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
     }
 
     .section-ul > .inputLi {
