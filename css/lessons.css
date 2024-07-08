@@ -1,9 +1,10 @@
 :root {
-    --bgbtn: #d88ab8;
-    --hover: #706f6f;
-    --header: #F5E3F5;
+    --bgbtn: #fdcae1;
+    --hover: #c7f5f5;
+    --header: #fff;
     --colorTxt: #a59f9f;
-    --titles: #3eaf28;
+    --subtitle: #706f6f;
+    --titles: #6bbe5a;
     --bgMain: rgb(241, 241, 241);
 
     --sizeLogo: 2rem;
@@ -21,7 +22,7 @@
 }
 
 em {
-    color: var(--hover);
+    color: var(--subtitle);
 }
 
 span {
@@ -30,6 +31,63 @@ span {
 
 a {
     text-decoration: none;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: none;
+    font-size: var(--sizeNavbar);
+    color: var(--colorTxt);
+}
+
+input[type="text"]::placeholder {
+    color: var(--colorTxt);
+    font-size: var(--sizeNavbar);
+}
+
+input[type="text"]:focus {
+    border: 2px solid var(--hover);
+    outline: none;
+}
+
+button {
+    background-color: var(--bgbtn);
+    color: var(--header);
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--sizeTxt);
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    box-shadow: 1px 1px 6px 3px var(--hover);
+    transform: scale(1.05);
+}
+
+.spanResult {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: var(--sizeTxt);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.section-ul > .inputLi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rigth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -102,8 +160,7 @@ a {
     background-color: var(--bgbtn);
     text-decoration: none;
     color: var(--header);
-    padding: 10px 30px;
-    border-radius: 4px;
+    padding: 10px 30px;    border-radius: 4px;
     transition: all 0.3s ease;
 }
 
@@ -129,11 +186,11 @@ main {
     font-size: var(--sizeTitles);
     color: var(--titles);
     border-bottom: 2px dotted var(--titles);
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .section-h3, .section-h4 {
-    color: var(--hover);
+    color: var(--subtitle);
     font-size: var(--sizeLogo);
     margin-bottom: 30px;
 }
@@ -155,7 +212,7 @@ main {
 }
 
 .subcol-1 > p, .subcol-2 > p {
-    border-bottom: 2px dashed var(--hover);
+    border-bottom: 2px dashed var(--subtitle);
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0;
@@ -196,8 +253,6 @@ main {
 }
 
 @media (max-width:425px ) {
-
-
 
     .banner p {
         font-size: 4vh;
@@ -244,4 +299,33 @@ main {
     .br {
         margin-bottom: 10px;
     }
+
+    .section-ul > .inputLi {
+        align-items:flex-start;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+
+    button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .spanResult {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .rigth {
+        flex-direction: column;
+    }
+
+
 } 

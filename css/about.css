@@ -1,9 +1,10 @@
 :root {
-    --bgbtn: #d88ab8;
-    --hover: #706f6f;
-    --header: #F5E3F5;
+    --bgbtn: #fdcae1;
+    --hover: #c7f5f5;
+    --header: #fff;
     --colorTxt: #a59f9f;
-    --titles: #3eaf28;
+    --subtitle: #706f6f;
+    --titles: #6bbe5a;
     --bgMain: rgb(241, 241, 241);
 
     --sizeLogo: 2rem;
@@ -19,6 +20,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+em {
+    color: var(--subtitle);
+}
+
 a {
     text-decoration: none;
 }
@@ -123,7 +129,7 @@ main {
 }
 
 .section-h3 {
-    color: var(--hover);
+    color: var(--subtitle);
     font-size: var(--sizeLogo);
     margin-bottom: 20px;
 }

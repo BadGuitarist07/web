@@ -1,9 +1,10 @@
 :root {
-    --bgbtn: #d88ab8;
-    --hover: #706f6f;
-    --header: #F5E3F5;
+    --bgbtn: #fdcae1;
+    --hover: #c7f5f5;
+    --header: #ffffff;
+    --subtitle: #706f6f;
     --colorTxt: #a59f9f;
-    --titles: #3eaf28;
+    --titles: #6bbe5a;
     --bgMain: rgb(241, 241, 241);
 
     --sizeLogo: 2rem;
@@ -16,6 +17,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+em {
+    color: var(--subtitle);
 }
 
 a {
@@ -60,6 +65,10 @@ a {
     color: var(--header);
     text-decoration: none;
     font-size: var(--sizeNavbar);
+}
+
+.navbar li a:hover {
+    color: var(--hover);
 }
 
 /** Banner **/
@@ -137,12 +146,13 @@ main {
     padding: 10px 30px;
     border-radius: 4px;
     transition: all 0.5s ease;
-    font-size: var(--sizeTxt);
+    font-size: var(--sizeTxt)ñ
     
 }
 
 .section-a:hover {
     box-shadow: 1px 1px 6px 3px var(--hover);
+    transform: scale(1.03);
 }
 
 @media (max-width:425px ) {
